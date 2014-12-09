@@ -9,7 +9,7 @@ namespace DAL
     public class User
     {
         public int id { get; set; }     
-        public string Name { get; set; }  
+        public string UserName { get; set; }  
         public string MiddleName { get; set; }
         public string Forename { get; set; } 
         public string email { get; set; }

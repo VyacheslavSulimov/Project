@@ -13,6 +13,7 @@ using project.Models;
 namespace project.Controllers
 {
     [Authorize]
+    
     public class AccountController : Controller
     {
         public AccountController()
@@ -74,7 +75,7 @@ namespace project.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public async Task<ActionResult> Register(RegisterUserViewModel model)
         {
             if (ModelState.IsValid)
             {
